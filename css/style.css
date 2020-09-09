@@ -5,8 +5,8 @@
 }
 
 body{
-    background-image: url("../img/background.jfif");
-    background-size: contain;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
 }
 
 #container{
@@ -34,10 +34,12 @@ header{
 }
 
 h1{
+    font-family: 'Oswald', sans-serif;
     font-size: 3vw;
 }
 
 h2{
+    font-family: 'Oswald', sans-serif;
     font-size: 1.5vw;
 }
 
@@ -47,29 +49,32 @@ header, footer{
 }
 
 header{
-    background-color: #4d3319;
+    background-color: #4d3219;
+    border: 1px solid black;
+    border-radius: 3px;
 }
 
 
 .header-menu{
-    background-color: #4d3319;
     width: 70%;
     margin: 0 auto;
 }
 
 .header-menu div{
+    border-right: 1px solid #271a0c;
+    border-left: 1px solid #271a0c;
     padding: 10px;
     text-align: center;
+    font-family: 'Oswald', sans-serif;
     font-size: 1vw;
     color: rgba(255,255,255,0.7);
     width: 20%;
-    background-color: #3b2712;
     float: left;
     text-transform: uppercase;
 }
 
 .button-nav:hover{
-    background-color:  #271a0c;
+    background-color:  #3a2613;
 }
 
 nav::after{
@@ -98,6 +103,7 @@ main::after{
     margin: 5px auto;
     float:left;
     text-decoration: none;
+    font-family: 'Oswald', sans-serif;
     font-size: 0.9vw;
 }
 
@@ -109,8 +115,13 @@ main::after{
     background-color: white;
 }
 
+.Lside1,.Lside2,.Lside3{
+    border-radius: 2px;
+    box-shadow: 0px 0px 73px -18px black;
+}
+
 .Lside2,.Lside3{
-        margin-top: 10px;
+    margin-top: 10px;
 }
 
 #Lside ul{
@@ -119,12 +130,17 @@ main::after{
 }
 
 #Lside li{
-    padding: 10px 0;
+    padding: 10px 8px;
+}
+
+#Lside h4{
+    font-size: 1.2vw;
 }
 
 #Lside a{
-  color: rgba(100,180,100,0.7);
+  color: rgba(0, 204, 102,0.8);
   text-decoration: none;
+  font-size: 1vw;
 }
 /**_______FINE ASIDE SINISTRA_______**/
 
@@ -134,15 +150,19 @@ section{
     width: 50%;
     margin: 5px 10px;
     float:left;
+    font-family: 'Oswald', sans-serif;
     background-color: white;
+    box-shadow: 0px 0px 73px -18px black;
+    border-radius: 2px;
 }
 
 section h3{
     padding: 5px;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 2.2vw;
     text-transform: uppercase;
     color:  #271a0c;
+    text-shadow: 2px 1px rgba(100, 100, 100, 0.5);
 }
 
 section li{
@@ -153,7 +173,7 @@ section li{
 }
 
 section a{
-  color: rgba(100,180,100,0.7);
+  color: rgba(0, 204, 102,0.8);
   text-decoration: none;
 }
 
@@ -172,7 +192,7 @@ section p{
     font-size: 0.8vw;
     padding: 10px;
     width: 80%;
-    margin: 10px auto;
+    margin: 25px auto;
     background-color: rgba(100, 100, 100, 0.1);
 }
 /**_______FINE SECTION_______**/
@@ -180,15 +200,21 @@ section p{
 
 /**_______INIZIO ASIDE DESTRA_______**/
 #Rside{
+    font-family: 'Oswald', sans-serif;
     width: calc(25% - 10px);
     margin: 5px auto;
     float:left;
 }
 
 .Rside1{
-    padding: 10px;
+    padding: 25px 10px;
     margin-bottom: 10px;
     background-color:white;
+}
+
+.Rside1,.Rside2{
+    border-radius: 2px;
+    box-shadow: 0px 0px 73px -18px black;
 }
 
 ::placeholder{
@@ -209,9 +235,64 @@ section p{
     font-size: 1.2 vw;
     padding:10px;
 }
+
+.tags{
+    padding: 10px;
+}
+
+.tags a{
+    text-decoration: none;
+    color: rgba(0, 204, 102,0.8);
+    font-size: 0.9vw;
+}
+
+.tags span{
+    font-size: 1.5vw;
+}
+
 /**_______FINE ASIDE DESTRA_______**/
 
 /**_______FINE MAIN_______**/
+
+
+/**_______FINE FOOTER_______**/
 footer{
-    background-color: rgba(50,255,255,0.8);
+    font-family: 'Oswald', sans-serif;
+    background-color: white;
+    border-radius: 1px;
+    box-shadow: 0px 0px 73px -18px black;
 }
+
+.Lfooter{
+    width: 50%;
+    padding: 15px;
+    font-size: 0.8vw;
+    float: left;
+}
+
+.Lfooter span{
+    color: grey;
+}
+
+.Rfooter{
+    width: 50%;
+    padding: 15px;
+    font-size: 1vw;
+    float: right;
+    direction: rtl;
+}
+
+.Rfooter a{
+    text-decoration: none;
+    padding-left: 10px;
+    color: grey;
+    line-height: 30px;
+}
+
+
+footer::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/**_______FINE FOOTER_______**/
